@@ -1,0 +1,17 @@
+1- Generate a synthetic dataset using the provided code or download the ready generated one along with the real data from the link:
+https://drive.google.com/drive/folders/1GK5oK9EeIoCch1fZlZxrnMjWp1aT3Ks9?usp=sharing
+2- download the pretrained weights of Yolov7 from the link:
+https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt
+3- Locate the weights in the main directory.
+4- Update the config file data/OSRE_dataRotation.yaml by defining the downloaded dataset paths.
+5- Run the required comman (train, test, detect).
+#--------------------------------------------
+# Detect (inference in images or videos)
+python detectRotation.py  --img-size 640 --conf 0.3 --iou 0.65 --device 0 --weights osre.pt --source inference/videos_smoothed_with_2D_convolution
+
+# Training:
+python -m torch.distributed.launch --nproc_per_node 8 --master_port 9527 train.py  --workers 8 --device 0,1,2,3,4,5,6,7 --batch-size 64 --epochs 100 --data data/OSRE_dataRotation.yaml --img 640 640 --cfg cfg/training/OSRE-yolov7-IDetect.yaml --name Exp_OSRE_yolov7_Rotation_loss_0_1 --weights weights/yolov7.pt --hyp data/hyp.scratch.Rotation_loss_01.yaml
+
+# Testing:
+python testRotation.py --data data/OSRE_dataRotation.yaml --cfg cfg/training/OSRE-yolov7-IDetect.yaml --img 640 --batch 1 --conf 0.001 --iou 0.65 --device 0 --weights weights/osre.pt --name OSRE_yolov7_640_val
+#----------------------------------------------
