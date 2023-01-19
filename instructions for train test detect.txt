@@ -1,5 +1,4 @@
 1- Generate a synthetic dataset using the provided code or download the ready generated one along with the real data from the link:
-https://drive.google.com/drive/folders/1GK5oK9EeIoCch1fZlZxrnMjWp1aT3Ks9?usp=sharing
 2- download the pretrained weights of Yolov7 from the link:
 https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt
 3- Locate the weights in the main directory.
