@@ -12,7 +12,7 @@ This repository is based on the [YOLOv7](https://github.com/WongKinYiu/yolov7) s
 
  Video demo 1             |  Video demo 2
 :-------------------------:|:-------------------------:
-<p float="left"><img width="600" src="./inference/Demo_data/demo2.gif">   |  <p float="left"> <img width="600" src="./inference/Demo_data/demo1.gif"> 
+<p float="left"><img width="700" src="./inference/Demo_data/demo2.gif">   |  <p float="left"> <img width="700" src="./inference/Demo_data/demo1.gif"> 
 
 To watch the entire video demos with full quality see [youtube-videos](www.youtube.com) 
 <img width="1500" src="./inference/Demo_data/3DBikeOverview.png">
@@ -21,7 +21,7 @@ To watch the entire video demos with full quality see [youtube-videos](www.youtu
 
  Visualized rotation on images and videos             |  Rotation illustration
 :-------------------------:|:-------------------------:
-<p float="left"><img width="600" src="./inference/Demo_data/3DBikeRotation.png">    |  <img width="600" src="./inference/Demo_data/bikeRotationYZ.png"> 
+<p float="left"><img width="700" src="./inference/Demo_data/3DBikeRotation.png">    |  <img width="700" src="./inference/Demo_data/bikeRotationYZ.png"> 
 
 
 **Rotation Visualization.** We represent rotation in two axes, the outer angle represents the rotation of the object (e.g., bike) in $y$ axis, whereas the inner angle represents the object rotation in $z$ axis. We assume the bike well parked is not rotated in either axes. Rotating the bike in $y$ axis leads to lending the bike and/or fall it down in the ground. The rotated bike in $y$ axis may and may not be associated with rotation in $z$ axis at the same time. However, bikes can be rotated only in $z$ axis which indicates that it is standing and parked but in an inaccurate direction.
