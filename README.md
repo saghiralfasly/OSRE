@@ -1,7 +1,7 @@
 # OSRE: Object-to-Spot Rotation Estimation for Bike Parking Assessment
-### [Paper](https://arxiv.org/abs/xxxx.xxxxx) | [Supplementary](https://arxiv.org/abs/xxxx.xxxxx) | [Website](https://saghiralfasly.github.io/OSRE/) | [Data](https://github.com/saghiralfasly/SynthBRSet) | [Video Demos](https://youtube.com) 
+### [Paper](https://arxiv.org/abs/2303.00725) | [Supplementary](https://arxiv.org/pdf/2303.00725.pdf) | [Website](https://saghiralfasly.github.io/OSRE/) | [Data](https://github.com/saghiralfasly/SynthBRSet) | [Video Demos](https://youtu.be/W-ifWAbRwpM)
 
-This repository is the implementation of the paper ["**OSRE: Object-to-Spot Rotation Estimation for Bike Parking Assessment**"](https://arxiv.org/abs/xxx)
+This repository is the implementation of the paper ["**OSRE: Object-to-Spot Rotation Estimation for Bike Parking Assessment**"](https://arxiv.org/abs/2303.00725)
 
 ## Overview
 
@@ -14,7 +14,7 @@ This repository is based on the [YOLOv7](https://github.com/WongKinYiu/yolov7) s
 :-------------------------:|:-------------------------:
 <p float="left"><img width="700" src="./inference/Demo_data/demo2.gif">   |  <p float="left"> <img width="700" src="./inference/Demo_data/demo1.gif"> 
 
-To watch the entire video demos with full quality see [youtube-videos](www.youtube.com) 
+ 
 <img width="1500" src="./inference/Demo_data/3DBikeOverview.png">
 
 **Object-to-Spot Rotation Estimation.** Our proposed object-to-spot rotation estimation method provides two rotation angle predictions in two axes $y$ and $z$. Rotation in $y$ axis represents the bicycle leaning/falling left or right. When it is fallen down to the left side, it represents the angle $90^\circ$ or $\pi/2$ in radians, whereas falling down to the right size is representing the $270^\circ$ or $3\pi /2$. Similarly, rotation in $z$ axis represents the bike direction in its standing pose. i.e., (C) shows the rotated bike in $z$ axis ( ```rotated``` class) in blue color, the bikes lean left/right ( ```fallen``` class) are shown in orange color, and the well-parked bikes ( ```parked``` class) are plotted in green color. We visualize $z$ rotation in the inner circle and $y$ is visualized in the outer circle.
@@ -97,7 +97,7 @@ Performance of the proposed OSRE on top of several object detection baselines. T
 @article{alfasly2023OSRE,
   title={OSRE: Object-to-Spot Rotation Estimation for Bike Parking Assessment},
   author={Saghir, Alfasly and Zaid, Al-huda and Saifullah, Bello and Ahmed, Elazab and Jian, Lu and Chen Xu},
-  journal={arXiv preprint arXiv:xxxx.xxxxx},
+  journal={arXiv preprint arXiv:2303.00725},
   year={2023}
 }
 ```
