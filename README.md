@@ -10,9 +10,7 @@ We leveraged the power of 3D graphics and computer vision techniques to tackle a
 This repository is based on the [YOLOv7](https://github.com/WongKinYiu/yolov7) structure and assumes that all dependency for training [YOLOv7](https://github.com/WongKinYiu/yolov7#installation)  is already installed.
 
 
- Video demo 1             |  Video demo 2
-:-------------------------:|:-------------------------:
-<p float="left"><img width="400" src="./inference/Demo_data/demo2.gif">   |  <p float="left"> <img width="400" src="./inference/Demo_data/demo1.gif"> 
+ <p float="left"> <img width="700" src="./inference/Demo_data/demo1.gif"> 
 
  
 <img width="1500" src="./inference/Demo_data/3DBikeOverview.png">
