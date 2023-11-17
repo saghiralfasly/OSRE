@@ -9,17 +9,20 @@ We leveraged the power of 3D graphics and computer vision techniques to tackle a
 
 This repository is based on the [YOLOv7](https://github.com/WongKinYiu/yolov7) structure and assumes that all dependency for training [YOLOv7](https://github.com/WongKinYiu/yolov7#installation)  is already installed.
 
-
+<p align="center">
  <p float="left"> <img width="700" src="./inference/Demo_data/demo1.gif"> 
+</p>
 
- 
+
+ <p align="center">
 <img width="1500" src="./inference/Demo_data/3DBikeOverview.png">
+</p>
 
 **Object-to-Spot Rotation Estimation.** Our proposed object-to-spot rotation estimation method provides two rotation angle predictions in two axes $y$ and $z$. Rotation in $y$ axis represents the bicycle leaning/falling left or right. When it is fallen down to the left side, it represents the angle $90^\circ$ or $\pi/2$ in radians, whereas falling down to the right size is representing the $270^\circ$ or $3\pi /2$. Similarly, rotation in $z$ axis represents the bike direction in its standing pose. i.e., (C) shows the rotated bike in $z$ axis ( ```rotated``` class) in blue color, the bikes lean left/right ( ```fallen``` class) are shown in orange color, and the well-parked bikes ( ```parked``` class) are plotted in green color. We visualize $z$ rotation in the inner circle and $y$ is visualized in the outer circle.
 
-             
+<p align="center">           
 <p float="left"><img width="500" src="./inference/Demo_data/3DBikeRotation.png">  
-
+</p>
 
 **Rotation Visualization.** We represent rotation in two axes, the outer angle represents the rotation of the object (e.g., bike) in $y$ axis, whereas the inner angle represents the object rotation in $z$ axis. We assume the bike well parked is not rotated in either axes. Rotating the bike in $y$ axis leads to leaning the bike and/or fall it down in the ground. The rotated bike in $y$ axis may and may not be associated with rotation in $z$ axis at the same time. However, bikes can be rotated only in $z$ axis which indicates that it is standing and parked but in an inaccurate direction.
 
