@@ -95,11 +95,14 @@ Performance of the proposed OSRE on top of several object detection baselines. T
 ## Citation 
 ```
 @article{alfasly2023OSRE,
-  title={OSRE: Object-to-Spot Rotation Estimation for Bike Parking Assessment},
-  author={Saghir, Alfasly and Zaid, Al-huda and Saifullah, Bello and Ahmed, Elazab and Jian, Lu and Chen Xu},
-  journal={arXiv preprint arXiv:2303.00725},
-  year={2023}
-}
+  author={Alfasly, Saghir and Al-Huda, Zaid and Bello, Saifullahi Aminu and Elazab, Ahmed and Lu, Jian and Xu, Chen},
+  journal={IEEE Transactions on Intelligent Transportation Systems}, 
+  title={OSRE: Object-to-Spot Rotation Estimation for Bike Parking Assessment}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-10},
+  doi={10.1109/TITS.2023.3330786}}
 ```
 ## Acknowledgements 
 
