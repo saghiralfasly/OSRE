@@ -1,7 +1,7 @@
 # OSRE: Object-to-Spot Rotation Estimation for Bike Parking Assessment
 ### [Paper](https://arxiv.org/abs/2303.00725) | [Supplementary](https://arxiv.org/pdf/2303.00725.pdf) | [Website](https://saghiralfasly.github.io/OSRE-Project/) | [Data](https://github.com/saghiralfasly/SynthBRSet) | [Video Demos](https://youtu.be/W-ifWAbRwpM)
 
-This repository is the implementation of the paper ["**OSRE: Object-to-Spot Rotation Estimation for Bike Parking Assessment**"](https://arxiv.org/abs/2303.00725, IEEE Transactions on Intelligent Transportation Systems.
+This repository is the implementation of the paper ["**OSRE: Object-to-Spot Rotation Estimation for Bike Parking Assessment**"](https://arxiv.org/abs/2303.00725), IEEE Transactions on Intelligent Transportation Systems.
 
 ## Overview
 
